@@ -12,40 +12,63 @@ body {
       
     }
     header {
-      background-color: #00854d;
       color: white;
-      padding: 1rem 2rem;
+      padding: 0.5rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
       position:fixed;
       width: 100%;
+      z-index: 1000;
+    }
+    .isnotscrolled{
+      background-color: transparent;
+      box-shadow: none;
+    }
+    .isscrolled{
+      background-color: #fcfcfc;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
     nav a {
-      color: white;
+      color: rgb(28, 27, 27);
       text-decoration: none;
       margin: 0 1rem;
       font-weight: 600;
     }
     .hero {
-
+      position: relative;
       height:100px;
       padding: 5rem 2rem;
+      padding-bottom: 0;
       text-align: center;
       color: white;
-      background-color: #02252d;
-      border: solid 1px blue;
-      height:650px;
+      background-color: #ffffff;
+      background-image: url(/hdrbackground.png);
+      background-size: cover;
+      background-position: center;
+      height:max-content;
     }
     .hero h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
+    .hero > * {
+      color: #222;
+    }
     .section {
       padding: 4rem 2rem;
       max-width: 1200px;
       margin: auto;
+    }
+
+    .box{
+      position: absolute;
+      padding: 20px;
+      border: hidden;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      background-color: #f9f9f9;
+      z-index: 10;
     }
 
     .flexed {
@@ -55,23 +78,26 @@ body {
       flex-wrap: wrap;
     }
 
-    .flexed > div {
+    .flexed > span {
       flex: 1;
-      margin: 0 1rem;
+      margin: 2rem;
+      min-width: 300px;
     }
 
     /* the pop shadow style */
     .pop-shadow{
       box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-      background-image: url(/checkimage.jpg);
+      background-image: url(/comm-img.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      width: 100%;
+      width: 500px;
       height: 400px;
-
       padding: 3rem;
     }
-
+    .slider-container{
+      max-width: 100%;
+      overflow-x: hidden;
+    }
     .slider{
       display:flex;
       width:100vw;
@@ -94,7 +120,6 @@ body {
       padding: 7rem;
       background-color: #f9f9f9;
       margin: 1.5rem;
-      z-index: 
     }
     .products {
       display: grid;
