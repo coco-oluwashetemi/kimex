@@ -21,6 +21,7 @@ body {
       width: 100%;
       z-index: 1000;
     }
+
     .isnotscrolled{
       background-color: transparent;
       box-shadow: none;
@@ -34,6 +35,11 @@ body {
       text-decoration: none;
       margin: 0 1rem;
       font-weight: 600;
+      
+    }
+    nav a:hover {
+      color: #ddd;
+      text-decoration: underline;
     }
     .hero {
       position: relative;
@@ -46,6 +52,7 @@ body {
       background-image: url(/hdrbackground.png);
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       height:max-content;
     }
     .hero h1 {
@@ -135,6 +142,15 @@ body {
     .product-card img {
       max-width: 100%;
       border-radius: 8px;
+    }
+    .retail-outlets{
+      display: flex;
+      justify-content: center;
+    }
+    .outlet-list{
+      border-radius:10px;
+      
+      border:solid 1px brown;
     }
     footer {
       background-color: #00854d;

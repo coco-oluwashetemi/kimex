@@ -30,13 +30,16 @@ window.addEventListener('scroll', (ev) => {
     hero.style.backgroundPositionY = `${scrollY * 0.5}px`;
     hero.style.backgroundSize = `${100 + scrollY * 0.5}%`;
 
-    //all boxes curve to the bottom center of the screen on scrolling down
-    let boxes = document.querySelectorAll('.box');
-    boxes.forEach((box, index) => {
-        let boxY = scrollY + (index * 50); // stagger the boxes
-        box.style.transform = `translateY(${boxY}px)`;
-        box.style.transform += ` translateX(-50%)`; // center horizontally
-    });
+    const heroRect = hero.getBoundingClientRect();
+    if (scrollY < heroRect.top + heroRect.height) {
+        //all boxes curve to the bottom center of the screen on scrolling down
+        let boxes = document.querySelectorAll('.box');
+        boxes.forEach((box, index) => {
+            let boxY = scrollY + (index * 50); // stagger the boxes
+            box.style.transform = `translateY(${boxY}px)`;
+            box.style.transform += ` translateX(-50%)`; // center horizontally
+        });
+    }
 
     //all boxes curve to random positions on scrolling up
     if (scrollY < 100) {
