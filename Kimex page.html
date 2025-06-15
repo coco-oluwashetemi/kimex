@@ -14,7 +14,7 @@
     <body>
   <header>
     <div>
-      <img src="logo.svg" alt="" width="100" class="kimex-logo">
+      <img src="static/logo.svg" alt="" width="100" class="kimex-logo">
     </div>
     <nav>
       <a href="#about">About</a>
@@ -28,7 +28,7 @@
   <section class="hero">
     <h1>Your One Stop Place For Authentic Afro-Caribbean Foodstuff</h1>
     <p>Retail & Wholesale – Bringing the Taste of Home to Your Table</p>
-    <img src="hero-image.png" alt="">
+    <img src="static/hero-image.png" alt="">
   </section>
 
   <section class="flexed section" id="about">
@@ -44,17 +44,17 @@
     <h2>Our Featured Products Include</h2>
     <div class="products">
       <div class="product-card">
-        <img src="./yamImage.webp" alt="Yam">
+        <img src="./static/yamImage.webp" alt="Yam">
         <h3>Fresh Yam</h3>
         <p>Organic, imported yam straight from Nigeria and Ghana.</p>
       </div>
       <div class="product-card">
-        <img src="./plantainImage.jpeg" alt="Plantain">
+        <img src="./static/plantainImage.jpeg" alt="Plantain">
         <h3>Ripe Plantain</h3>
         <p>Perfect for frying or boiling – available in bulk or retail.</p>
       </div>
       <div class="product-card">
-        <img src="./Egusi.jpg" alt="Egusi">
+        <img src="./static/Egusi.jpg" alt="Egusi">
         <h3>Egusi Seeds</h3>
         <p>High-quality ground melon seeds for traditional soups.</p>
       </div>
@@ -70,16 +70,25 @@
 
   <section class="section slider-container">
     <div class="slider">
-        <div class="productbox"></div>
-        <div class="productbox"></div>
-        <div class="productbox"></div>
-        <div class="productbox"></div>
-        <div class="productbox"></div>
-        <div class="productbox"></div>
-        <div class="productbox"></div>
-        <div class="productbox"></div>
-        <div class="productbox"></div>
-        <div class="productbox"></div>
+        <div class="productbox" style="background-image: url(/static/garri.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/hake.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/meatpie.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/palm\ oil.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/plantain.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/semolina.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/vegetables.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/yam.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/beans.webp);"></div>
+        <!-- doubly for smoother and non-abrupt slider when it reaches the end -->
+        <div class="productbox" style="background-image: url(/static/garri.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/hake.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/meatpie.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/palm\ oil.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/plantain.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/semolina.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/vegetables.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/yam.webp);"></div>
+        <div class="productbox" style="background-image: url(/static/beans.webp);"></div>
     </div>
   </section>
   <section class="section" id="retail">
@@ -87,35 +96,26 @@
     <p>Visit our retail outlets across Dublin for a wide range of Afro-Caribbean food products.</p>
     <div class="retail-outlets">
       <div class="outlet-list">
-      <div class="image-container"><img src="./kimexInchicore.png" alt="Kimex inchicore" class="retail-image"></div>
-      <h3 style = "text-align: center;">🏪 Kimex – Wholesale & Retail</h3>
-      <div class="outlet-info">
-      <!-- Add the link to the address on google maps directly on the address -->
-      <p><strong>📍 Address:</strong><br/>Unit 7, Goldenbridge Industrial Estate <br/>Tyrconnell Road, Inchicore, Dublin 8, D08 H281, Ireland</p>
-      <p><strong>📞 Phone: </strong></br>(01) 454 7943</p>
-      <p><strong>🕒 Opening Hours: </strong><br/>Monday to Saturday: 9:00 AM - 6:00 PM<br/>Sunday: Closed</p>
-    <div class="readMore">Read More</div>
-    </div>
-  </div>
+        <div class="outlet-info">
+          <h1>🏪 Kimex – Wholesale & Retail</h1>
+          <!-- Add the link to the address on google maps directly on the address -->
+          <p><strong>📍 Address:</strong><br/>Unit 7, Goldenbridge Industrial Estate <br/>Tyrconnell Road, Inchicore, Dublin 8, D08 H281, Ireland</p>
+          <p><strong>📞 Phone: </strong></br>(01) 454 7943</p>
+          <p><strong>🕒 Opening Hours: </strong><br/>Monday to Saturday: 9:00 AM - 6:00 PM<br/>Sunday: Closed</p>
+          <div class="readMore">Read More</div>
+        </div>
+      </div>
       <div class="outlet-list">
-      <div class="image-container"><img src="./kimex-Blanch.jpg" alt="Kimex plus" class="retail-image"></div>
-      <h3 style = "text-align: center;">🏬 Kimex Plus Superstore</h3>
-      <div class="outlet-info">
-      <!-- Add the link to the address on google maps directly on the address -->
-      <p><strong>📍 Address:</strong><br/>Unit 9, Porters Avenue Coolmine Industrial Estate, Dublin 15, Ireland</p>
-      <p><strong>📞 Phone: </strong></br>(01) 640 9300</p>
-      <p><strong>🕒 Opening Hours: </strong><br/>Monday to Wednessday: 10:00 AM - 7:00 PM<br/>Thursday to Saturday: 10:00 AM - 8:00 PM<br/>Sunday: 11:00 AM to 5:00PM</p>
-      <div class="readMore">Read More</div>
+        <div class="outlet-info">
+          <h1>🏬 Kimex Plus Superstore</h1>
+        <!-- Add the link to the address on google maps directly on the address -->
+        <p><strong>📍 Address:</strong><br/>Unit 9, Porters Avenue Coolmine Industrial Estate, Dublin 15, Ireland</p>
+        <p><strong>📞 Phone: </strong></br>(01) 640 9300</p>
+        <p><strong>🕒 Opening Hours: </strong><br/>Monday to Wednessday: 10:00 AM - 7:00 PM<br/>Thursday to Saturday: 10:00 AM - 8:00 PM<br/>Sunday: 11:00 AM to 5:00PM</p>
+        <div class="readMore">Read More</div>
+      </div>
     </div>
     </div>
-    </div>
-  </section>
-
-  <section class="section" id="contact" >
-    <h2>Contact Us</h2>
-    <p>Email: Kimexhotmail@gmail.com<br>
-    Phone: +234 800 000 0000<br>
-    Visit us: 123 Afro Market Street, Lagos, Nigeria</p>
   </section>
 
   <footer>
@@ -126,6 +126,9 @@
         <input type="email" name="email"  id="emailInput" placeholder="Enter your email" >
         <button type="submit">Subscribe</button>
       </form>
+      <p style="font-size: small;">Email: Kimexhotmail@gmail.com<br>
+        Phone: +234 800 000 0000<br>
+        Visit us: 123 Afro Market Street, Lagos, Nigeria</p>
       <p>&copy; 2025 KIMEX Cash and Carry. All rights reserved.</p>
     </div>
   </footer>

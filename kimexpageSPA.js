@@ -2,7 +2,7 @@
 
 window.addEventListener('DOMContentLoaded',(ev)=>{
     //create 10 boxes and set them to random positions
-    let hero = document.querySelector('.hero');
+    /* let hero = document.querySelector('.hero');
     for(let i = 0; i < 10; i++){
         let box = document.createElement('div');
         box.className = 'box';
@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded',(ev)=>{
         box.style.top = Math.random() * 90 + '%';
         box.innerText = `Box ${i+1}`;
         hero.appendChild(box);
-    }  
+    }  */ 
 })
 
 window.addEventListener('scroll', (ev) => {
