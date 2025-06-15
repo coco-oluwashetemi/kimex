@@ -58,3 +58,8 @@ window.addEventListener('scroll', (ev) => {
 });
 
 
+//Working on the email submission form 
+document.getElementById('emailForm').addEventListener('submit', function(event) {
+
+    
+})
