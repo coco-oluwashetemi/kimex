@@ -21,6 +21,13 @@ body {
       width: 100%;
       z-index: 1000;
     }
+    .kimex-logo {
+     transition:transform 0.3s ease; 
+    }
+    .kimex-logo:hover {
+      transform: scale(1.1);
+      
+    }
 
     .isnotscrolled{
       background-color: transparent;
