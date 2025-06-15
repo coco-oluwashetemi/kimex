@@ -203,20 +203,41 @@ body {
       background-color: antiquewhite;
     }
     .email-collection {
-      background-color: #bdb0b0;
+      background-color: transparent;
       padding-left: 6px;
       text-align: justify;
-      border-radius: 12px;
-      height:170px;
-      max-width: 600px;
-      border: solid 1px #ddd;
     }
+    .email-collection > * {
+      color: white;
+    } 
     footer {
-      background-color: #f5e5e5;
+      background: -webkit-linear-gradient(90deg, rgba(0,0,0,0) 20%, rgba(7, 7, 7, 0.75) 48%), url(footer-background.jpg);
+      background: linear-gradient(90deg, rgba(0,0,0,0) 20%, rgba(27, 27, 27, 0.804) 48%), url(footer-background.jpg);
+      background-size: cover;
+      background-position: center;
       color: black;
       text-align: center;
       padding: 2rem;
       height: 400px;
+      display: flex;
+      justify-content: right;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
     }
 
     @media screen and (max-width:700px) {}
