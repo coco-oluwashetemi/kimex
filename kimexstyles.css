@@ -7,9 +7,16 @@ body {
       font-family: cursive;
       margin: 0;
       padding: 0;
-      background-color: #fefefe;
       color: #222;
       
+    }
+
+    .background-box {
+      position: relative;
+      min-height: 100vh;
+      
+      background-size: cover;
+      background-position: center;
     }
     header {
       color: white;
@@ -171,10 +178,13 @@ body {
       justify-content:space-around;
       flex-wrap: wrap;
       margin: auto;
+      transition:transform 0.3s ease; 
     }
+
+  
     .retail-outlets .outlet-list:first-child{
-      background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.886) 60%, rgba(0,0,0,0.689) 20%), url(/static/kimexInchicore.png);
-      background: linear-gradient(90deg, rgba(7, 7, 7, 0.886) 60%, rgba(0,0,0,0.689) 20%), url(/static/kimexInchicore.png);
+      background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.886) 60%, rgba(0,0,0,0.689) 20%), url(/static/kimex-inchicore.jpg);
+      background: linear-gradient(90deg, rgba(7, 7, 7, 0.886) 60%, rgba(0,0,0,0.689) 20%), url(/static/kimex-inchicore.jpg);
       background-size: cover;
       background-position: center;
       color: white;
@@ -219,6 +229,15 @@ body {
       box-sizing: content-box;
       padding: 1rem;
     }
+    .address_paragraph a{
+      color: white;
+      text-decoration: none;
+    }
+    .address_paragraph a:hover {
+      text-decoration: underline;
+    }
+  
+
     .readMore {
       color: white;
       max-width: max-content;
